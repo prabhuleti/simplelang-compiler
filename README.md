@@ -20,32 +20,16 @@ The project serves educational purposes and can be extended with additional feat
 
 ## File Structure
 
-```plaintext
 📂 project-root
- ├── 📂 src/                      # Source code for the compiler
- │   ├── lexer.c                  # Lexer implementation: Tokenizes input source code
- │   ├── parser.c                 # Parser implementation: Builds the Abstract Syntax Tree (AST)
- │   ├── codegen.c                # Code generation: Converts AST into 8-bit CPU assembly
- │   ├── ast.h                    # Header file defining structures used for the AST
- │   ├── tokens.h                 # Token types and definitions
- │   ├── symtab.h                 # Symbol table management (variables, types)
- │   └── main.c                   # Main driver program to execute the compiler
- ├── 📂 include/                  # Header files and common definitions
- │   ├── simplelang.h             # General header with utility functions and definitions
- │   ├── lexer.h                  # Lexer function declarations
- │   ├── parser.h                 # Parser function declarations
- │   ├── codegen.h                # Code generation function declarations
- ├── 📂 tests/                    # Sample SimpleLang programs to test the compiler
- │   ├── test1.slang              # Example program using arithmetic operations
- │   ├── test2.slang              # Example program using conditionals
- │   └── test3.slang              # Example program testing variable assignments
- ├── 📂 docs/                     # Project documentation
- │   ├── simplelang_spec.md       # Detailed specification of the SimpleLang syntax and grammar
- │   └── design_notes.md          # Internal notes on design decisions and future improvements
- ├── 📂 build/                    # Build directory for object files and binaries
- ├── 📂 output/                   # Directory for generated assembly files
+ ├── 📂 src/                      # Source files for the compiler
+ │   ├── lexer.cpp                # Tokenizes the input source code
+ │   ├── parser.cpp               # Parses the tokens into an AST
+ │   ├── parser.h                 # Header file for the parser functions and AST structures
+ │   ├── main.cpp                 # Main driver program to execute the compiler
+ ├── 📂 include/                  # Common definitions and headers
+ │   └── compiler.h               # Compiler-related definitions, constants, and utility functions
+ ├── 📂 input/                    # Input source files
+ │   └── input.txt                # Example SimpleLang source code for testing the compiler
  ├── Makefile                     # Build automation using Make
  ├── README.md                    # This file
- ├── simplelang_spec.md           # SimpleLang language specification
- ├── cpu_simulator.c              # 8-bit CPU simulator to execute the generated assembly code
- └── LICENSE                      # Project license (MIT License)
+ └── LICENSE                      # License file for the project (MIT License)
