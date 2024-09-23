@@ -21,15 +21,12 @@ The project serves educational purposes and can be extended with additional feat
 ## File Structure
 
 📂 project-root
- ├── 📂 src/                      # Source files for the compiler
+                   
  │   ├── lexer.cpp                # Tokenizes the input source code
  │   ├── parser.cpp               # Parses the tokens into an AST
  │   ├── parser.h                 # Header file for the parser functions and AST structures
- │   ├── main.cpp                 # Main driver program to execute the compiler
- ├── 📂 include/                  # Common definitions and headers
- │   └── compiler.h               # Compiler-related definitions, constants, and utility functions
- ├── 📂 input/                    # Input source files
- │   └── input.txt                # Example SimpleLang source code for testing the compiler
- ├── Makefile                     # Build automation using Make
+ │   ├── main.cpp                 # Main driver program to execute the compiler                
+ │   └── compiler.h               # Compiler-related definitions, constants, and utility functions                    
+ │   └── input.txt                # Example SimpleLang source code for testing the compiler                    
  ├── README.md                    # This file
- └── LICENSE                      # License file for the project (MIT License)
+                      
